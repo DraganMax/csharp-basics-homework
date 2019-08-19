@@ -1,0 +1,7 @@
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arithmetics\CalculateArea\bin\Debug\CalculateArea.exe.config
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arithmetics\CalculateArea\bin\Debug\CalculateArea.exe
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arithmetics\CalculateArea\bin\Debug\CalculateArea.pdb
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arithmetics\CalculateArea\obj\Debug\CalculateArea.csprojAssemblyReference.cache
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arithmetics\CalculateArea\obj\Debug\CalculateArea.csproj.CoreCompileInputs.cache
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arithmetics\CalculateArea\obj\Debug\CalculateArea.exe
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arithmetics\CalculateArea\obj\Debug\CalculateArea.pdb
