@@ -1,0 +1,7 @@
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Loops\Loops\Exercise2\obj\Debug\Exercise2.csprojAssemblyReference.cache
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Loops\Loops\Exercise2\obj\Debug\Exercise2.csproj.CoreCompileInputs.cache
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Loops\Loops\Exercise2\bin\Debug\Exercise2.exe.config
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Loops\Loops\Exercise2\bin\Debug\Exercise2.exe
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Loops\Loops\Exercise2\bin\Debug\Exercise2.pdb
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Loops\Loops\Exercise2\obj\Debug\Exercise2.exe
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Loops\Loops\Exercise2\obj\Debug\Exercise2.pdb
