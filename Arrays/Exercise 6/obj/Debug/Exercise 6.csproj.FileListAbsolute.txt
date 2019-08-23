@@ -1,7 +1,0 @@
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise 6\bin\Debug\Exercise 6.exe.config
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise 6\bin\Debug\Exercise 6.exe
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise 6\bin\Debug\Exercise 6.pdb
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise 6\obj\Debug\Exercise 6.csprojAssemblyReference.cache
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise 6\obj\Debug\Exercise 6.csproj.CoreCompileInputs.cache
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise 6\obj\Debug\Exercise 6.exe
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise 6\obj\Debug\Exercise 6.pdb
