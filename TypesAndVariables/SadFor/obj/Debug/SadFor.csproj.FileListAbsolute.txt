@@ -1,7 +1,0 @@
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\TypesAndVariables\SadFor\bin\Debug\SadFor.exe.config
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\TypesAndVariables\SadFor\bin\Debug\SadFor.exe
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\TypesAndVariables\SadFor\bin\Debug\SadFor.pdb
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\TypesAndVariables\SadFor\obj\Debug\SadFor.csprojAssemblyReference.cache
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\TypesAndVariables\SadFor\obj\Debug\SadFor.csproj.CoreCompileInputs.cache
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\TypesAndVariables\SadFor\obj\Debug\SadFor.exe
-C:\C# projekts\csharp-syllabus\csharp-basics\exercises\TypesAndVariables\SadFor\obj\Debug\SadFor.pdb
