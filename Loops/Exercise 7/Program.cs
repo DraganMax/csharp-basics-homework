@@ -21,47 +21,46 @@ namespace Exercise_7
         private static void PigLet()
         {
             Random num = new Random();
-
+            
+            bool gameOver = false;
+            int rolledNumber = 0;
+            
             int sum = 0;
-            int a = num.Next(1, 6);
-
-
-                switch (a)
+            do
+            {
+                rolledNumber = num.Next(1, 7);
+                Console.WriteLine($"You rolled a {rolledNumber}!");
+                if (rolledNumber == 1)
                 {
-                    case 2:
-                        Console.WriteLine("You rolled a " + a + "!");
-                        break;
-                    case 3:
-                        Console.WriteLine("You rolled a " + a + "!");
-                        break;
-                    case 4:
-                        Console.WriteLine("You rolled a " + a + "!");
-                        break;
-                    case 5:
-                        Console.WriteLine("You rolled a " + a + "!");
-                        break;
-                    case 6:
-                        Console.WriteLine("You rolled a " + a + "!");
-                        break;
-                    default:
-                        Console.WriteLine("You rolled" + a + "!");
-                        Console.WriteLine("You got 0 points.");
-                        break;
+                    
+                    Console.WriteLine("You got 0 points.");
+                    break;
+                }
+                else
+                {
+                    sum += rolledNumber;
+                    Console.Write("Roll again? ");
+                    string input = Console.ReadLine().ToLower();
+                    switch (input)
+                    {
+                        case "y": case "yes":
+                            gameOver = false;
+                            break;
+                        case "n": case "no":
+                            gameOver = true;
+                            break;
+                    }
+
+                    
                 }
 
-                Console.Write("Roll again? ");
-                string input = Console.ReadLine();
-                switch (input)
-                {
-                    case "no":
-                        sum += a;
-                        Console.WriteLine($"You got {sum} points.");
-                        break;
-                    case "yes":
-                        num.Next(1, 6);
-                        break;
 
-                }
+            } while (!gameOver);
+            if (rolledNumber != 1)
+            {
+                Console.WriteLine($"You got {sum} points.");
+                
+            }
         }
 
     }
