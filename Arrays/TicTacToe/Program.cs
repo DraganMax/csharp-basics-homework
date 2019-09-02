@@ -4,144 +4,223 @@ namespace TicTacToe
 {
     class Program
     {
-        private static char[,] board = new char[3, 3];
+        private static string[,] arr = new string[3, 3];
 
         private static void Main(string[] args)
         {
-            Console.WriteLine("Game already in progress!");
-            Console.WriteLine("'X', choose your location, (row, column): ");
+            int temp = 0;
+            bool isOk = false;
+            bool isGameOver = false;
+            InitBoard();
+            do
+            {
+                do
+                {
+                    if (isGameOver)
+                        break;
+                    if (temp == 9)
+                    {
+                        Console.WriteLine("There is no winner");
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 0] == arr[0, 1] && arr[0, 1] == arr[0, 2]) && arr[0, 0] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 0]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[1, 0] == arr[1, 1] && arr[1, 1] == arr[1, 2]) && arr[1, 0] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[1, 0]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[2, 0] == arr[2, 1] && arr[2, 1] == arr[2, 2]) && arr[2, 0] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[2, 0]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 0] == arr[1, 0] && arr[1, 0] == arr[2, 0]) && arr[0, 0] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 0]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 1] == arr[1, 1] && arr[1, 1] == arr[2, 1]) && arr[0, 1] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 1]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 2] == arr[1, 2] && arr[1, 2] == arr[2, 2]) && arr[0, 2] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 2]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 0] == arr[1, 1] && arr[1, 1] == arr[2, 2]) && arr[0, 0] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 0]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 2] == arr[1, 1] && arr[1, 1] == arr[2, 0]) && arr[0, 2] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 2]);
+                        isGameOver = true;
+                        break;
+                    }
+                    isOk = false;
+                    Console.Write("'X' choose your location (row, column) -> ");
+                    string input = Console.ReadLine();
+                    input = input.Replace(" ", "");
+                    if (input.Length != 2)
+                    {
+                        Console.WriteLine("Incorrect input! Try again...");
+                        continue;
+                    }
+                    int x = (int)Char.GetNumericValue(input[0]);
+                    int y = (int)Char.GetNumericValue(input[1]);
+                    if ((x != 0 && x != 1 && x != 2) || (y != 0 && y != 1 && y != 2))
+                    {
+                        Console.WriteLine("Incorrect input! Try again...");
+                        continue;
+                    }
+                    string player = "X";
+                    if (arr[x, y] == " ")
+                    {
+                        Change(arr, player, x, y);
+                        DisplayBoard();
+                        temp++;
+                        isOk = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Something goes wrong! Try again...");
+                        continue;
+                    }
+                }
+                while (isOk != true);
 
-            int input1 = Convert.ToInt32(Console.ReadLine());
-            int input2 = Convert.ToInt32(Console.ReadLine());
-            board[input1, input2] = 'X';
-            DisplayBoard();
 
-            Console.WriteLine("'O', choose your location, (row, column): ");
-            int input3 = Convert.ToInt32(Console.ReadLine());
-            int input4 = Convert.ToInt32(Console.ReadLine());
-            board[input3, input4] = 'O';
-            
-            //InitBoard();
-            DisplayBoard();
-            Console.WriteLine("'X', choose your location, (row, column): ");
-
-            int input5 = Convert.ToInt32(Console.ReadLine());
-            int input6 = Convert.ToInt32(Console.ReadLine());
-            board[input5, input6] = 'X';
-            DisplayBoard();
-
-            Console.WriteLine("'O', choose your location, (row, column): ");
-            int input7 = Convert.ToInt32(Console.ReadLine());
-            int input8 = Convert.ToInt32(Console.ReadLine());
-            board[input7, input8] = 'O';
-            DisplayBoard();
-
-            Console.WriteLine("'X', choose your location, (row, column): ");
-            int input9 = Convert.ToInt32(Console.ReadLine());
-            int input10 = Convert.ToInt32(Console.ReadLine());
-            board[input9, input10] = 'X';
-            DisplayBoard();
-
-            Console.ReadLine();
+                do
+                {
+                    if (isGameOver)
+                        break;
+                    if (temp == 9)
+                    {
+                        Console.WriteLine("There is no winner");
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 0] == arr[0, 1] && arr[0, 1] == arr[0, 2]) && arr[0, 0] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 0]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[1, 0] == arr[1, 1] && arr[1, 1] == arr[1, 2]) && arr[1, 0] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[1, 0]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[2, 0] == arr[2, 1] && arr[2, 1] == arr[2, 2]) && arr[2, 0] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[2, 0]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 0] == arr[1, 0] && arr[1, 0] == arr[2, 0]) && arr[0, 0] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 0]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 1] == arr[1, 1] && arr[1, 1] == arr[2, 1]) && arr[0, 1] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 1]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 2] == arr[1, 2] && arr[1, 2] == arr[2, 2]) && arr[0, 2] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 2]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 0] == arr[1, 1] && arr[1, 1] == arr[2, 2]) && arr[0, 0] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 0]);
+                        isGameOver = true;
+                        break;
+                    }
+                    else if ((arr[0, 2] == arr[1, 1] && arr[1, 1] == arr[2, 0]) && arr[0, 2] != " ")
+                    {
+                        Console.WriteLine("The winner is " + arr[0, 2]);
+                        isGameOver = true;
+                        break;
+                    }
+                    isOk = false;
+                    Console.Write("'O' choose your location (row, column) -> ");
+                    string input = Console.ReadLine();
+                    input = input.Replace(" ", "");
+                    if (input.Length != 2)
+                    {
+                        Console.WriteLine("Incorrect input! Try again...");
+                        continue;
+                    }
+                    int x = (int)Char.GetNumericValue(input[0]);
+                    int y = (int)Char.GetNumericValue(input[1]);
+                    if ((x != 0 && x != 1 && x != 2) || (y != 0 && y != 1 && y != 2))
+                    {
+                        Console.WriteLine("Incorrect input! Try again...");
+                        continue;
+                    }
+                    string player = "O";
+                    if (arr[x, y] == " ")
+                    {
+                        Change(arr, player, x, y);
+                        DisplayBoard();
+                        temp++;
+                        isOk = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Something goes wrong! Try again...");
+                        continue;
+                    }
+                    if (temp == 3)
+                        isGameOver = true;
+                }
+                while (isOk != true);
+            }
+            while (isGameOver != true);
         }
 
+        private static void Change(string[,] arr, string player, int x, int y)
+        {
+            arr[x, y] = player;
+        }
         private static void InitBoard()
         {
             // fills up the board with blanks
             for (var r = 0; r < 3; r++)
             {
                 for (var c = 0; c < 3; c++)
-                    board[r, c] = ' ';
+                    arr[r, c] = " ";
             }
-
-            
-            /*if (input1 == 0 && input2 == 0)
-            {
-                board[0, 0] = 'X';
-            }
-            if (input1 == 0 && input2 == 1)
-            {
-                board[0, 1] = 'X';
-            }
-            if(input1 == 0 && input2 == 2)
-            {
-                board[0, 2] = 'X';
-            }
-            if(input1 == 1 && input2 == 0)
-            {
-                board[1, 0] = 'X';
-            }
-            if (input1 == 1 && input2 == 1)
-            {
-                board[1, 1] = 'X';
-            }
-            if (input1 == 1 && input2 == 2)
-            {
-                board[1, 2] = 'X';
-            }
-            if (input1 == 2 && input2 == 0)
-            {
-                board[2, 0] = 'X';
-            }
-            if (input1 == 2 && input2 == 1)
-            {
-                board[2, 1] = 'X';
-            }
-            if (input1 == 2 && input2 == 2)
-            {
-                board[2, 2] = 'X';
-            }
-
-            Console.WriteLine("'O', choose your location, (row, column): ");
-            if (input1 == 0 && input2 == 0)
-            {
-                board[0, 0] = 'O';
-            }
-            if (input1 == 0 && input2 == 1)
-            {
-                board[0, 1] = 'O';
-            }
-            if (input1 == 0 && input2 == 2)
-            {
-                board[0, 2] = 'O';
-            }
-            if (input1 == 1 && input2 == 0)
-            {
-                board[1, 0] = 'O';
-            }
-            if (input1 == 1 && input2 == 1)
-            {
-                board[1, 1] = 'O';
-            }
-            if (input1 == 1 && input2 == 2)
-            {
-                board[1, 2] = 'O';
-            }
-            if (input1 == 2 && input2 == 0)
-            {
-                board[2, 0] = 'O';
-            }
-            if (input1 == 2 && input2 == 1)
-            {
-                board[2, 1] = 'O';
-            }
-            if (input1 == 2 && input2 == 2)
-            {
-                board[2, 2] = 'O';
-            }
-            */
-
-
-
         }
 
         private static void DisplayBoard()
         {
-            Console.WriteLine("  0  " + board[0, 0] + "|" + board[0, 1] + "|" + board[0, 2]);
+            Console.WriteLine("  0  " + arr[0, 0] + "|" + arr[0, 1] + "|" + arr[0, 2]);
             Console.WriteLine("    --+-+--");
-            Console.WriteLine("  1  " + board[1, 0] + "|" + board[1, 1] + "|" + board[1, 2]);
+            Console.WriteLine("  1  " + arr[1, 0] + "|" + arr[1, 1] + "|" + arr[1, 2]);
             Console.WriteLine("    --+-+--");
-            Console.WriteLine("  2  " + board[2, 0] + "|" + board[2, 1] + "|" + board[2, 2]);
+            Console.WriteLine("  2  " + arr[2, 0] + "|" + arr[2, 1] + "|" + arr[2, 2]);
             Console.WriteLine("    --+-+--");
         }
     }

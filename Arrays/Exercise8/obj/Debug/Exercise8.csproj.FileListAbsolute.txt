@@ -1,0 +1,7 @@
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise8\bin\Debug\Exercise8.exe.config
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise8\bin\Debug\Exercise8.exe
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise8\bin\Debug\Exercise8.pdb
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise8\obj\Debug\Exercise8.csprojAssemblyReference.cache
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise8\obj\Debug\Exercise8.csproj.CoreCompileInputs.cache
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise8\obj\Debug\Exercise8.exe
+C:\C# projekts\csharp-syllabus\csharp-basics\exercises\Arrays\Arrays\Exercise8\obj\Debug\Exercise8.pdb
