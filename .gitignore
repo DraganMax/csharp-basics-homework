@@ -1,3 +1,4 @@
+
 # Created by https://www.gitignore.io/api/visualstudio
 # Edit at https://www.gitignore.io/?templates=visualstudio
 
@@ -353,3 +354,12 @@ healthchecksdb
 MigrationBackup/
 
 # End of https://www.gitignore.io/api/visualstudio
+
+/**/.vs
+/**/.bin
+/**/.obj
+
+//**//.vs
+//**//.bin
+//**//.obj
+
